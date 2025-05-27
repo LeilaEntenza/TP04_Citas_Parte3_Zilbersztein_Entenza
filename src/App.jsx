@@ -1,10 +1,9 @@
 
+import React from 'react';
 import { useEffect, useState } from 'react'
-import { Listado } from './Listado'
-import { Form } from './Form'
-import './App.css'
+import './App.css';
 import { Routes, Route } from 'react-router';
-
+import Navbar from './Navbar';
 
 function App() {
   const [lista, setLista] = useState([]);
@@ -13,21 +12,12 @@ function App() {
   },[]);
   return (
     <>
-    <div id="root">
-      <h1>ADMINISTRADOR DE PACIENTES</h1>
-      <div className="container">
-        <div className="row">
-          <div className="one-half column">
-            <h2>Crear mi Cita</h2>
-            <Form listado={lista} setLista={setLista}/>
-          </div>
-          <div className="one-half column">
-            <h2>Administra tus citas</h2>
-            <Listado listado={lista} setLista={setLista}/>
-          </div>
-        </div>
-      </div>  
-    </div>
+      <Navbar />
+      <h1>Citas</h1>
+      <p>Concretá citas para que atendamos a tus mascotas!</p>
+      <div className='container'>
+        <img width="400" src='https://i.pinimg.com/736x/10/bc/bd/10bcbdc51fdacda178fbf70267e19251.jpg'/>
+      </div>
     </>
   )
 }

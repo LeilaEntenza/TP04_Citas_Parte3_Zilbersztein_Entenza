@@ -18,3 +18,19 @@ h1, h2 {
   text-align: center;
   font-family: 'Staatliches', cursive;
 }
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.container img{
+  border-radius: 25px;
+}
+
+p{
+  font-size: larger;
+  color: white;
+  text-align: center;
+}
