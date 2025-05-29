@@ -14,7 +14,7 @@ export default function Navbar() {
             <Link to="/crear">Crear</Link>
           </li>
           <li>
-            <Link to="/ver">Ver</Link>
+            <Link to="/ver:lista">Ver</Link>
           </li>
         </ul>
       </nav>

@@ -9,7 +9,7 @@ import Crear from './Crear';
 import Home from './Home';
 
 function App() {
-  const [lista, setLista] = useState([]);
+  const [lista, setLista] = useState(["hola"]);
  useEffect(()=>{
     setLista(JSON.parse(localStorage.getItem("citas"))); 
   },[]);
