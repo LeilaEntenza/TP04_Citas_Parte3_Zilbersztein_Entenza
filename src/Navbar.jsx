@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route, Link } from 'react-router';
-import Crear from './Crear'
-import Ver from './Ver'
+import Crear from './pages/Crear'
+import Ver from './pages/Ver'
 import './Navbar.css';
 
 

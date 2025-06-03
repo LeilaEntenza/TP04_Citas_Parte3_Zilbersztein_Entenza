@@ -4,9 +4,9 @@ import { useEffect, useState} from 'react'
 import './App.css';
 import { Routes, Route, Link } from 'react-router';
 import Navbar from './Navbar';
-import Ver from './Ver';
-import Crear from './Crear';
-import Home from './Home';
+import Ver from './pages/Ver';
+import Crear from './pages/Crear';
+import Home from './pages/Home';
 
 function App() {
   const [lista, setLista] = useState(["hola"]);
@@ -18,8 +18,8 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/ver" element={<Ver/>}/>
-        <Route path="/crear" element={<Crear/>}/>
+        <Route path="/ver" element={<Ver lista={lista}/>}/>
+        <Route path="/crear" element={<Crear lista={lista}/>}/>
       </Routes>
       {/*<h1>Citas</h1>
       <p>Concretá citas para que atendamos a tus mascotas!</p>
