@@ -1,4 +1,5 @@
 import React from 'react'
+import { Listado } from './Listado'
 import { BrowserRouter as Router,
   Link,
   Route,

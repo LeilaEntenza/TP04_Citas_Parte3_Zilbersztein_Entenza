@@ -1,8 +1,14 @@
 import React from 'react'
+import './Crear.css';
+
 import { Form } from './Form'
 
 export default function Crear() {
   return (
-    <Form/>
+    <div className='formC'>
+      <div className='form'>
+      <Form />
+      </div>
+    </div>
   )
 }

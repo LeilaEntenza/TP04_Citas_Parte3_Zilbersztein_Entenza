@@ -2,6 +2,8 @@ import React from 'react'
 import { Routes, Route, Link } from 'react-router';
 import Crear from './Crear'
 import Ver from './Ver'
+import './Navbar.css';
+
 
 export default function Navbar() {
   return (     
