@@ -1,13 +1,12 @@
 import React from 'react'
 import { Listado } from '../Listado'
-import { BrowserRouter as Router,
-  Link,
-  Route,
-  Routes, useParams } from 'react-router'
 
-export default function Ver({ lista }) {
- // const {lista} = useParams();
+export default function Ver({ lista, setLista }) {
+ console.log(lista)
   return (
-    <div>hola</div>
+    <>
+      <h1>Citas</h1>
+      <Listado listado={ lista } setLista={ setLista }/>
+    </>
   )
 }

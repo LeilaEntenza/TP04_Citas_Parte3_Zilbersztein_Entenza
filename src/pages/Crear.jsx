@@ -3,12 +3,15 @@ import './Crear.css';
 
 import { Form } from '../Form'
 
-export default function Crear({ lista }) {
+export default function Crear({ lista, setLista }) {
   return (
-    <div className='formC'>
-      <div className='form'>
-      <Form />
+    <>
+      <h1>Fijar una cita</h1>
+      <div className='formC'>
+        <div className='form'>
+        <Form listado={lista} setLista={setLista}/>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

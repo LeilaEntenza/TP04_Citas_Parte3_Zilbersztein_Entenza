@@ -25,11 +25,13 @@
     border-bottom: 1px solid #e1e1e1;
     color: black;
     margin-bottom: 20px;
+    margin: 5%;
   }
 
   .cita p {
     font-weight: bold;
     margin-bottom: .8rem;
+    color: black;
   }
 
   .cita p span {

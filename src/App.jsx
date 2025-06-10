@@ -9,17 +9,19 @@ import Crear from './pages/Crear';
 import Home from './pages/Home';
 
 function App() {
-  const [lista, setLista] = useState(["hola"]);
+  const [lista, setLista] = useState([]);
  useEffect(()=>{
-    setLista(JSON.parse(localStorage.getItem("citas"))); 
+    if(localStorage.getItem("citas")){
+      setLista(JSON.parse(localStorage.getItem("citas"))); 
+    }
   },[]);
   return (
     <>
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/ver" element={<Ver lista={lista}/>}/>
-        <Route path="/crear" element={<Crear lista={lista}/>}/>
+        <Route path="/ver" element={<Ver lista={lista} setLista={setLista}/>}/>
+        <Route path="/crear" element={<Crear lista={lista} setLista={setLista}/>}/>
       </Routes>
       {/*<h1>Citas</h1>
       <p>Concretá citas para que atendamos a tus mascotas!</p>
