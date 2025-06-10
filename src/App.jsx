@@ -19,9 +19,9 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/ver" element={<Ver lista={lista} setLista={setLista}/>}/>
-        <Route path="/crear" element={<Crear lista={lista} setLista={setLista}/>}/>
+        <Route path="/TP04_Citas_Parte3_Zilbersztein_Entenza/" element={<Home/>}/>
+        <Route path="/TP04_Citas_Parte3_Zilbersztein_Entenza/ver" element={<Ver lista={lista} setLista={setLista}/>}/>
+        <Route path="/TP04_Citas_Parte3_Zilbersztein_Entenza/crear" element={<Crear lista={lista} setLista={setLista}/>}/>
       </Routes>
       {/*<h1>Citas</h1>
       <p>Concretá citas para que atendamos a tus mascotas!</p>
